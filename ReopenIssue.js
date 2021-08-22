@@ -32,12 +32,12 @@ export default class ReopenIssue extends Component {
         }
         render(){
             return(
-                <div className="row">
-                <div className="col-sm-12">
+                <div className="row" style={{backgroundImage:'url("https://www.dnnsoftware.com/Portals/0/Images/hero-background-12-4.jpg?ver=2017-08-17-185733-337.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+                <div className="col-sm-12 ">
                <div align="center">
-                <form className="text-dark my-4" style={{border:'2px solid black',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}} onSubmit={this.handleSubmit} >                    
+                <form className="my-4 text-light" style={{border:'1px solid black',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}} onSubmit={this.handleSubmit} >                    
                     <div className="col-sm">
-                        <label>Comments :
+                        <label>Comments :&nbsp;
                         <i class="zmdi zmdi-comment-text"></i>
                         </label><br></br>
                         <textarea rows='5' cols="50" required placeholder="please enter reason for reopening the issue" name='userComments' value={this.state.userComments} onChange={this.handleChange} />                       

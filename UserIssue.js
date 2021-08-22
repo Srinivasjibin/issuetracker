@@ -70,7 +70,7 @@ export default class UserIssue extends Component {
 
                     console.log("@success", response);
                     alert("Issue raised Successfully")
-                    window.location.href = ("/UserIssue")
+                    window.location.href = ("/UserHome")
 
                 })
                 .catch(function (error) {
@@ -86,13 +86,13 @@ export default class UserIssue extends Component {
     render() {
         return (
             <>
-                <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+                <div className="row" style={{backgroundImage:'url("https://www.dnnsoftware.com/Portals/0/Images/hero-background-12-4.jpg?ver=2017-08-17-185733-337.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
             <UserNavbar />
-            <marquee style={{color:'red'}}><h6>Please Contact us for any queries- +91 9515773146</h6></marquee><br/>
+            <marquee style={{color:'white'}}><h6>*Please Contact us for any queries- +91 9515773146</h6></marquee><br/>
                 <div  align="center"> 
     
-                <form  className="bg-light" style={{border:'2px solid black',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}} noValidate validated>
+                <form  className="text-light" style={{border:'1px solid black',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}} noValidate validated>
                 <div  class="row">
                     <div class="col-sm">
                         <label>Issue Name&nbsp;

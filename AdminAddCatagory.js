@@ -41,13 +41,13 @@ class AdminAddCat extends Component {
     }
     render() {
         return (
-            <div style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div style={{backgroundImage:'url("https://eton-solutions.com/wp-content/uploads/2019/11/ETON-home2-banner-1200x656.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <AdminNavbar/>
 
                
                    <div align="center" className="row">
                        <div className="col-sm-12">
-                    <form className="text-dark mt-5 col-7 bg-light" style={{border:'2px solid black',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}}onSubmit={this.handleSubmit}>
+                    <form className="text-dark mt-5 col-7 bg-light" style={{border:'1px solid white',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}}onSubmit={this.handleSubmit}>
                         <label>Category type &nbsp;
                             <i class="zmdi zmdi-edit"></i></label>
                         <input type="text" placeholder="Enter Category type" className="form-control " required name='categoryType' value={this.state.categoryType} onChange={this.handleChange} /><br />

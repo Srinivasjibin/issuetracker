@@ -127,16 +127,13 @@ export default class Registration extends Component {
         
         console.log(this.state)
         return (
-            <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:1200}}>
+            <div className="row" style={{backgroundImage:'url("https://www.yalgaar.io/Content/themes/Admin/img/login_full_bg.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:1050}}>
             <div className="col-sm-12">
-            <Container className="text-danger my-5 bg-light" style={{border:'2px solid black',"paddingLeft":100,"width":700,fontFamily:'sans-serif',color:'black'}}><br/>
-            <div style={{"paddingLeft":200}} >
-                    <img src="register.png" style={{"height":100}}></img>
-                </div><br/>
-                <div style={{"paddingLeft":190}} >
+            <Container className="text-danger my-5 bg-light" style={{border:'1px solid white',"paddingLeft":100,"width":700,fontFamily:'sans-serif',color:'black'}}><br/>
+                <div style={{"paddingLeft":150}} >
                     <h2 className=" text-dark "><b>
                     <i class="zmdi zmdi-file-text"></i>&nbsp;Register</b></h2>
-                    </div><hr/>
+                    </div>
                 <Form className="text-dark my-4" style={{fontFamily:'sans-serif',color:'black'}} noValidate validated onSubmit={this.handleSubmit}>
                 <div className="row">
                     <div className="col-md-5" >

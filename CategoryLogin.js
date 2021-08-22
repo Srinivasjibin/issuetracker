@@ -38,10 +38,10 @@ function CategoryLogin() {
 
     }
     return (
-        <><div className="row" align="center" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+        <><div className="row" align="center" style={{backgroundImage:'url("https://www.yalgaar.io/Content/themes/Admin/img/login_full_bg.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
         <div className="col-sm-12">
             <br /><br /><br /><br />
-            <div className="col-sm-4 bg-light"  style={{border:'2px solid black',"width":500,"padding":20}}>
+            <div className="col-sm-4 bg-light"  style={{border:'1px solid white',"width":500,"padding":20}}>
                 <br />
                 <h2 className="text-dark m-6"> <i class="zmdi zmdi-lock-outline"></i>&nbsp;
                 Category rep login</h2><br />

@@ -47,10 +47,10 @@ export default class CategoryRepViewHistory extends Component {
         render() {
            
             return (
-                <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+                <div className="row" style={{backgroundImage:'url("https://swall.teahub.io/photos/small/250-2508110_how-do-i-organize-my-demand-portfolio-management.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
                     <CatRepNavBar />
-                    <Container className="text-dark">   
+                    <Container className="text-light">   
                         <table  className="table">
                         {this.state.data.filter(data => (data.issueCategory == sessionStorage.category)).map((issue,idx) => {
                             return <div>                            
@@ -58,13 +58,13 @@ export default class CategoryRepViewHistory extends Component {
                                 <div>  
                                           <tr>
                                           <td><Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                           <h5>Issue :{issue.id}</h5>
+                                           <h5 style={{color:'white'}}>Issue :{issue.id}</h5>
                                        </Accordion.Toggle>
                                        </td></tr>
                                         
                                        </div>
                                         <Accordion.Collapse eventKey="0"  >
-                                            <div>
+                                            <div style={{color:'white'}}>
                                             <thead>
                                            <tr>
                                                <th> name:</th>

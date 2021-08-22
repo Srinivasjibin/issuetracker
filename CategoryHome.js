@@ -30,7 +30,7 @@ export default class CategoryHome extends Component {
         return (
             <>
             
-            <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" style={{backgroundImage:'url("https://swall.teahub.io/photos/small/250-2508110_how-do-i-organize-my-demand-portfolio-management.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
             <CatRepNavBar />
             <Container>
@@ -44,14 +44,14 @@ export default class CategoryHome extends Component {
                                       <tr>
                                       <td>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <p >Notification {idx + 1}</p>
+                                        <p style={{color:'white'}}>Notification {idx + 1}</p>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
                                 <Accordion.Collapse eventKey="0">
                                 <table className="table">
                                        
-                                       <div>
+                                       <div style={{color:'white'}}>
                                           <tr><th>Name:</th>
                                           
                                           <th>Description </th>
@@ -96,14 +96,14 @@ export default class CategoryHome extends Component {
                                       <tr>
                                       <td>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <p >Notification {idx + 1}</p>
+                                        <p style={{color:'white'}}>Notification {idx + 1}</p>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
                                 <Accordion.Collapse eventKey="0">
                                 <table className="table">
                                        
-                                       <div>
+                                       <div style={{color:'white'}}>
                                           <tr><th>Name:</th>
                                           
                                           <th>Description </th>

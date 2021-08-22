@@ -61,29 +61,29 @@ export default class AdminIssueUpdate extends Component {
    
     render(){
         return(
-            <div className="row">
+            <div className="row" style={{backgroundImage:'url("https://eton-solutions.com/wp-content/uploads/2019/11/ETON-home2-banner-1200x656.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
                  <AdminNavbar/>
                 <Container>   <br/><br/>                 
                             <div align="center">
-                                <form  className={"text-dark"}> 
+                                <form  className={"text-light"}  style={{border:'1px solid white',"padding":3,"width":700,"padding":30,fontFamily:'sans-serif',color:'black'}}> 
 
                                     <div className="">
-                                        <div className="col-sm-4">
+                                        <div className="col-sm-6">
                                         <label>Issue Name:</label>
                                         <input  name="issueName" className="form-control" disabled  value={this.state.issueName}
                                         onChange={this.handleChange}></input>
                                          </div>
                                     </div>
                                     <div className="">
-                                    <div className="col-sm-4">
+                                    <div className="col-sm-6">
                                         <label>Issue Description:</label>
                                         <input  name="issueDescription" className="form-control" disabled value={this.state.issueDescription}
                                         onChange={this.handleChange}></input>
                                      </div>
                                     </div>
                                     <div className="">
-                                    <div className="col-sm-4">
+                                    <div className="col-sm-6">
                                         <label>Status:&nbsp;
                             <i class="zmdi zmdi-edit"></i></label>
                                         <span></span>
@@ -96,7 +96,7 @@ export default class AdminIssueUpdate extends Component {
 
                                     </div>
                                     <div className="">
-                                    <div className="col-sm-4">
+                                    <div className="col-sm-6">
                                         <label>Issue Resolution:&nbsp;
                             <i class="zmdi zmdi-edit"></i></label>
                                         <span></span>
@@ -106,7 +106,7 @@ export default class AdminIssueUpdate extends Component {
                                     </div>
 
                                     <div className="">
-                                    <div className="col-sm-4">
+                                    <div className="col-sm-6">
                                         <label>Issue Category:</label>
                                         <span />
                                         <input name="issueCategory" className="form-control" disabled value={this.state.issueCategory}

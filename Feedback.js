@@ -36,11 +36,12 @@ export default class ReopenIssue extends Component {
         render(){
             <UserNavbar />
             return(
-            <div  style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row"  style={{backgroundImage:'url("https://www.dnnsoftware.com/Portals/0/Images/hero-background-12-4.jpg?ver=2017-08-17-185733-337.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+               <div className="col-sm-12 ">
                 <div align="center">
-                    <form className="bg-light" style={{border:'2px solid black',"width":700,fontFamily:'sans-serif',"padding":30}}>
-                        <div className="row" style={{"paddingLeft":220}}> 
-                            <div className="col-sm-6">
+                    <form className="  my-4 text-light" style={{border:'1px solid black',"width":700,fontFamily:'sans-serif',"padding":30}}>
+                        <div className="row" style={{"paddingLeft":100}}> 
+                            <div className="col-sm-10">
                             <label><i class="zmdi zmdi-file-text"></i>&nbsp;Feedback:</label>
                              <select name="issueFeedback" className="form-control"  value={this.state.issueFeedback}
                             onChange={this.handleChange}>
@@ -54,12 +55,13 @@ export default class ReopenIssue extends Component {
                         </div>                                    
                         <div className="col-sm-12">
                           <label>Comments :<i class="zmdi zmdi-comment-text"></i></label><br></br>
-                                 <textarea rows='5' cols="50" required placeholder="" name='issueComments' value={this.state.issueComments} onChange={this.handleChange} />                       
+                                 <textarea rows='5' cols="52" required placeholder="" name='issueComments' value={this.state.issueComments} onChange={this.handleChange} />                       
                         </div>
                         <div className="col-sm-12">
                                  <button className="btn-primary mx-4" onClick={this.feedback}>Submit <i class="zmdi zmdi-check"></i></button> 
                     </div>
             </form> </div>
+                </div>
                 </div>
             );
         }

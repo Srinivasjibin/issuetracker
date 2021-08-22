@@ -74,12 +74,12 @@ export default class CategoryIssueUpdate extends Component {
    
     render(){
         return(
-            <div className="row" align="center" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" align="center" style={{backgroundImage:'url("https://swall.teahub.io/photos/small/250-2508110_how-do-i-organize-my-demand-portfolio-management.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
                 <CatRepNavBar/>
                 <Container>                    
                 <br/><br/>                 
-                            <div align="center" className="bg-light" style={{border:'2px solid black',"width":500,"padding":20}}>
+                            <div align="center" className="bg-light" style={{border:'1px solid black',"width":500,"padding":20}}>
                                 <form  className={"text-dark"}> 
 
                                     <div className="row">

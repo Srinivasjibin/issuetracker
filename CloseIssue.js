@@ -62,12 +62,12 @@ export default class AdminIssueUpdate extends Component {
    
     render(){
         return(
-            <div className="row">
+            <div className="row"style={{backgroundImage:'url("https://www.dnnsoftware.com/Portals/0/Images/hero-background-12-4.jpg?ver=2017-08-17-185733-337.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
             <div className="col-sm-12">
                  <UserNavbar/>
                 <Container>   <br/><br/>                 
                             <div align="center">
-                                <form  className={"text-dark"}> 
+                                <form  className="text-white"> 
 
                                     <div className="">
                                         <div className="col-sm-4">

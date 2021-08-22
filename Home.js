@@ -10,7 +10,7 @@ import LoginForm from './LoginForm';
 class Home extends Component {
   render() {
     return (
-      <><div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+      <><div className="row" >
       <div className="col-sm-12">
       <div style={{backgroundImage:'url("https://wallpapercave.com/wp/wp2700080.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:870}}>
         <Navbar className="bg-dark" variant="dark">

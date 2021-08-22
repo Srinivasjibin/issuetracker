@@ -46,12 +46,12 @@ export default  class UserHistory extends Component {
         const data = this.state.data
         return (
             <>
-                <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+                <div className="row" style={{backgroundImage:'url("https://www.dnnsoftware.com/Portals/0/Images/hero-background-12-4.jpg?ver=2017-08-17-185733-337.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
             <UserNavbar />
-            <marquee style={{color:'red'}}><h6>Please Contact us for any queries- +91 9515773146</h6></marquee>
+            <marquee style={{color:'white'}}><h6>*Please Contact us for any queries- +91 9515773146</h6></marquee>
             <Container className="text-dark">  
-            <h3>Click on id to view issue</h3>
+            <h3 style={{color:'white'}}>Click on id to view issue</h3>
             <hr/>      
                 {data.filter(data=>data.username==sessionStorage.userId).map((issue, idx) => {
                     return <div>
@@ -59,9 +59,9 @@ export default  class UserHistory extends Component {
                         <table className="table">
                                    <div> 
                                   
-                                       <tr>
+                                       <tr style={{color:'white'}}>
                                        <td><Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <h5>Issue :{issue.id}</h5>
+                                        <h5 style={{color:'white'}}>Issue :{issue.id}</h5>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
@@ -70,8 +70,8 @@ export default  class UserHistory extends Component {
                                     
                                        
                                     <div>
-                                    <thead>
-                                       <tr><th>Issue name:</th>
+                                    <thead style={{color:'white'}}>
+                                       <tr style={{color:'white'}}><th>Issue name:</th>
                                        <th>Issue Description </th>
                                        <th>Issue Resolution </th>
                                        <th>Issue Category</th>
@@ -80,8 +80,8 @@ export default  class UserHistory extends Component {
                                        <th>Issue Created On</th>
                                        </tr>
                                        </thead>
-                                       <tbody>
-                                       <tr><td width="200">{issue.issueName}</td>
+                                       <tbody style={{color:'white'}}>
+                                       <tr style={{color:'white'}}><td width="200">{issue.issueName}</td>
                                       <td width="200">{issue.issueDescription}</td>
                                        <td width="200">{issue.issueResolution}</td>
                                         <td width="100">{issue.issueCategory}</td>

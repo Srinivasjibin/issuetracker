@@ -44,7 +44,7 @@ export default class CategoryIssueUpdate extends Component {
     }
     updateissue = (e) => { 
         let updatedIssue= this.state;     
-        axios.put( "http://localhost:8988/api/category/updateIssue",{
+        axios.put( "http://localhost:8080/api/category/updateIssue",{
         "id":updatedIssue.id,
         "issueStatus":updatedIssue.issueStatus,
         "issueResolution": updatedIssue.issueResolution,
@@ -61,7 +61,7 @@ export default class CategoryIssueUpdate extends Component {
    
     render(){
         return(
-            <div className="row" align="center" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" align="center" style={{backgroundImage:'url("https://swall.teahub.io/photos/small/250-2508110_how-do-i-organize-my-demand-portfolio-management.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
                 <CatRepNavBar/>
                 <Container>                    

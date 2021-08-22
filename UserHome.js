@@ -30,17 +30,17 @@ class UserHome extends Component {
     }
     render() {
         return (
-            <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" style={{backgroundImage:'url("https://www.dnnsoftware.com/Portals/0/Images/hero-background-12-4.jpg?ver=2017-08-17-185733-337.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 
             <div className="col-sm-12">
                 <UserNavbar />
-                <marquee className="text-danger"><h6>*Please Contact us for any queries :- +91 9515773146</h6></marquee>
+                <marquee className="text-light"><h6>*Please Contact us for any queries :- +91 9515773146</h6></marquee>
                 <Container >
                
                 <div className="my-5 mx-auto">
                   
                 <h5 className="text-warning"><i class="zmdi zmdi-alert-circle-o"></i>&nbsp;Active Issues</h5>
-                <hr/><i class="zmdi zmdi-notifications-active"></i>
+                <hr/><i class="zmdi zmdi-notifications-active" style={{color:'white'}}></i>
                 {this.state.issues.filter(data=>data.username==sessionStorage.userId&&data.issueStatus=="active").map((issue, idx) => {
                     return <div>
                     
@@ -49,7 +49,7 @@ class UserHome extends Component {
                                       <tr>
                                       <td>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <p>Notification {idx + 1}</p>
+                                        <p style={{color:"white"}}>Notification {idx + 1}</p>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
@@ -57,7 +57,7 @@ class UserHome extends Component {
                                 <table className="table">
                                        
                                        <div>
-                                          <tr><th>Issue name:</th>
+                                          <tr style={{color:'white'}}><th>Issue name:</th>
                                           <th>Issue Description </th>
                                         
                                           <th>Issue Category</th>
@@ -65,7 +65,7 @@ class UserHome extends Component {
                                        
                                           <th>Issue Created On</th>
                                           </tr>
-                                          <tr><td>{issue.issueName}</td>
+                                          <tr style={{color:'white'}}><td>{issue.issueName}</td>
                                          <td>{issue.issueDescription}</td>
                                           
                                            <td>{issue.issueCategory}</td>
@@ -82,7 +82,7 @@ class UserHome extends Component {
            
                
                 
-                <h5  className="text-success my-2">Resolved Issues</h5>
+                <h5  className="text-warning my-2">Resolved Issues</h5>
                 <hr/>
                  {this.state.issues.filter(data=>data.username==sessionStorage.userId&&data.issueStatus=="completed").map((issue, idx) => {
                     return <div>
@@ -92,15 +92,15 @@ class UserHome extends Component {
                                       <tr>
                                       <td>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <p >Notification {idx + 1}</p>
+                                        <p style={{color:"white"}}>Notification {idx + 1}</p>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
                                 <Accordion.Collapse eventKey="0">
                                 <table className="table">
                                        
-                                       <div>
-                                          <tr><th>Name:</th>
+                                       <div >
+                                          <tr style={{color:'white'}}><th>Name:</th>
                                           
                                           <th>Description </th>
                                          
@@ -114,7 +114,7 @@ class UserHome extends Component {
                                           
                                           <th></th>
                                           </tr>
-                                          <tr><td>{issue.issueName}</td>
+                                          <tr style={{color:'white'}}><td>{issue.issueName}</td>
                                       <td>{issue.issueDescription}</td>
                                        <td>{issue.issueResolution}</td>
                                         <td>{issue.issueCategory}</td>

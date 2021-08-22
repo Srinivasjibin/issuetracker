@@ -37,7 +37,7 @@ export default class AdminCatagoryUpdate extends Component {
             "categoryDescription": this.state.categoryDescription
         }).then(res=>{
             console.log("@rsponse ",res)
-            window.alert("category updated")
+            window.alert("category is updated successfully")
             window.location.href=("viewCategory")
         })
         event.preventDefault();
@@ -46,20 +46,20 @@ export default class AdminCatagoryUpdate extends Component {
         axios.delete("http://localhost:8080/api/admin/deleteCategory/"+this.state.categoryId)
         .then(res=>{
             console.log("@rsponse ",res)
-            window.alert("category deleted")
+            window.alert("category is deleted successfully")
             window.location.href=("viewCategory")
         })
     }
     render() {
         console.log(this.state)
         return (
-            <div style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div style={{backgroundImage:'url("https://eton-solutions.com/wp-content/uploads/2019/11/ETON-home2-banner-1200x656.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <AdminNavbar />
                 
              <br />
               <div align="center" className="row">
                   <div className="col-sm-12">
-                    <form className="text-dark bg-light" style={{border:'2px solid black',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}} onSubmit={this.updateHandler}>
+                    <form className="text-dark bg-light" style={{border:'1px solid white',"padding":3,"width":500,"padding":30,fontFamily:'sans-serif',color:'black'}} onSubmit={this.updateHandler}>
                         <div className="row">
                             <div className="col-sm-12">
                         <label>Catagory type</label>

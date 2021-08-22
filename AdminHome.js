@@ -27,32 +27,31 @@ class UserHome extends Component {
     
     render() {
         return (
-            <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" style={{backgroundImage:'url("https://eton-solutions.com/wp-content/uploads/2019/11/ETON-home2-banner-1200x656.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
             <div className="col-sm-12">
                 <AdminNavbar />
                 <Container>
                
-                <div className="my-5 mx-auto">
-                  
+                <div className="my-5 mx-auto"> 
                 <h5 className="text-warning">New Issues</h5>
-                <hr/>
-                <i class="zmdi zmdi-notifications-active"></i>
+                <hr style={{color:'white'}}/>
+                <i class="zmdi zmdi-notifications-active" style={{color:'white'}}></i>
                 {this.state.issues.filter(data=>data.issueStatus=="help").map((issue, idx) => {
                     return <div>
                     
                         <Accordion >
                         <div> 
-                                      <tr>
+                                      <tr style={{color:'white'}}>
                                       <td>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <p>Notification {idx + 1}</p>
+                                        <p style={{color:"white"}}>Notification {idx + 1}</p>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
                                 <Accordion.Collapse eventKey="0">
                                 <table className="table">
                                        
-                                       <div>
+                                       <div style={{color:'white'}}>
                                           <tr><th>Issue name:</th>
                                           <th>Issue Description </th>
                                         
@@ -82,23 +81,23 @@ class UserHome extends Component {
                    
                 })} 
                 <h5 className="text-warning">feedback</h5>
-                <hr/>
+                <hr style={{color:'white'}}/>
                 {this.state.issues.filter(data=>data.issueFeedback!=null).map((issue, idx) => {
                     return <div>
                     
                         <Accordion >
                         <div> 
-                                      <tr>
+                                      <tr style={{color:"white"}}>
                                       <td>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        <p>Notification {idx + 1}</p>
+                                        <p style={{color:"white"}}>Notification {idx + 1}</p>
                                     </Accordion.Toggle>
                                     </td></tr>
                                     </div>
                                 <Accordion.Collapse eventKey="0">
                                 <table className="table">
                                        
-                                       <div>
+                                       <div style={{color:"white"}}>
                                           <tr><th>User Id</th>
                                               <th>Issue name:</th>
                                           <th>Feedback </th>

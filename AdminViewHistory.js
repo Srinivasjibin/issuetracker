@@ -50,14 +50,14 @@ export default class AdminViewHistory extends Component {
             :
             this.state.data.filter(data => data.issueCategory == this.state.sortBy);
         return (
-            <div className="row">
+            <div className="row" style={{backgroundImage:'url("https://eton-solutions.com/wp-content/uploads/2019/11/ETON-home2-banner-1200x656.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
                 <AdminNavbar />
                 <Container className="text-dark">
           
                     <div className="ml-4 text-right">
                         <br />
-                        <label >sort by :-</label>
+                        <label style={{color:'white'}} >sort by :-</label>
                         <select id="select" name="sortBy" onChange={this.handleChange} >
                             <option>all</option>
                         </select>
@@ -68,17 +68,17 @@ export default class AdminViewHistory extends Component {
                              
                             <Accordion  >
                                
-                            <div> 
+                            <div style={{color:'white'}}> 
                                    
-                                      <tr>
+                                      <tr style={{color:'white'}}>
                                       <td><Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                       <h5>Issue :{issue.id}</h5>
+                                       <h5 style={{color:'white'}}>Issue :{issue.id}</h5>
                                    </Accordion.Toggle>
                                    </td></tr>
                                     
                                    </div>
                                     <Accordion.Collapse eventKey="0"  >
-                                        <div>
+                                        <div style={{color:'white'}}>
                                         <thead>
                                        <tr>
                                            <th> name:</th>

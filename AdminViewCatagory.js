@@ -27,13 +27,13 @@ class AdminViewCatagory extends Component {
     render(){
         return(
             
-            <div className="row" style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" style={{backgroundImage:'url("https://eton-solutions.com/wp-content/uploads/2019/11/ETON-home2-banner-1200x656.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
                 <div className="col-sm-12">
                 <AdminNavbar />
-                <div className={"bg-white text-dark"}>
+                <div className={"text-light"}>
         
                    
-                        <table  className="table" variant='light'>
+                        <table  className="table text-light" variant='light'>
                             <thead>
                                 <tr>
                                     <th>Catagory Id</th>
@@ -46,7 +46,7 @@ class AdminViewCatagory extends Component {
                                 {
                                 this.state.categoryList.map((catagory) => (
                                     <tr key = {catagory.categoryId}>
-                                      <a style={{textDecorationLine:'underline',color:'red'}} onClick={ () => this.editIssue(catagory.categoryId)} > 
+                                      <a style={{textDecorationLine:'underline',color:'yellow'}} onClick={ () => this.editIssue(catagory.categoryId)} > 
                                         <td>{catagory.categoryId}</td> </a> 
                                         <td>{catagory.categoryType}</td>
                                         <td>{catagory.categoryDescription}</td>
