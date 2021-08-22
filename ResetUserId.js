@@ -46,10 +46,10 @@ export default class ResetUserId extends Component {
     }
     render() {
         return (
-            <div className="row" align="center"style={{backgroundImage:'url("https://cutewallpaper.org/21/solid-grey-wallpaper/light-grey-wallpapers-clicolombia.co.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
+            <div className="row" align="center"style={{backgroundImage:'url("https://www.yalgaar.io/Content/themes/Admin/img/login_full_bg.jpg")', backgroundSize:'cover',backgroundRepeat:'no-repeat',height:920}}>
             <div className="col-sm-12">
             <Container>
-                <Form className="text-dark my-4 bg-light" onSubmit={this.handleSubmit} style={{border:'2px solid black',"width":500,"padding":20}} >
+                <Form className="text-dark my-4 bg-light" onSubmit={this.handleSubmit} style={{border:'1px solid black',"width":500,"padding":20}} >
                 <div >
                 <div className="row">
                         <div className="col-sm-12" >
